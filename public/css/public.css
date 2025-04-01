@@ -1,0 +1,174 @@
+/**
+ * Public styles
+ *
+ * @since      1.0.0
+ * @package    AI_Review_Generator
+ */
+
+/* Review Box */
+.ai-review-box {
+    position: relative;
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px 0;
+    color: #666666;
+}
+
+.ai-review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+.ai-review-box-title {
+    font-size: 1.5em;
+    margin: 0 0 5px 0;
+    color: #333333;
+}
+
+.ai-review-rating {
+    margin-bottom: 10px;
+}
+
+/* Review content sections */
+.ai-review-summary {
+    margin-bottom: 20px;
+}
+
+.ai-review-summary h4,
+.ai-review-pros h4,
+.ai-review-cons h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #333333;
+}
+
+.ai-review-summary p {
+    margin-top: 0;
+}
+
+.ai-review-pros,
+.ai-review-cons {
+    margin-bottom: 20px;
+}
+
+.ai-review-pros ul,
+.ai-review-cons ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.ai-review-pros li,
+.ai-review-cons li {
+    margin-bottom: 5px;
+}
+
+.ai-review-pros li::marker {
+    color: #2ecc71;
+}
+
+.ai-review-cons li::marker {
+    color: #e74c3c;
+}
+
+.ai-review-content {
+    margin-bottom: 20px;
+}
+
+.ai-review-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9em;
+    color: #999999;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 10px;
+    margin-top: 20px;
+}
+
+.ai-review-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.ai-review-author {
+    font-weight: 500;
+    color: #666666;
+}
+
+.ai-review-date {
+    color: #999999;
+}
+
+.ai-review-admin-links {
+    font-size: 0.9em;
+}
+
+.ai-review-admin-links a {
+    text-decoration: none;
+}
+
+/* Rating stars */
+.ai-review-stars {
+    display: inline-flex;
+    align-items: center;
+    font-size: 20px;
+    line-height: 1;
+}
+
+.ai-review-star {
+    margin-right: 2px;
+}
+
+.ai-review-rating-number {
+    margin-left: 5px;
+    font-size: 16px;
+}
+
+/* Display styles */
+.ai-review-box.minimal {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+.ai-review-box.card {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border: none;
+}
+
+/* Expandable content */
+.ai-review-expandable {
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.ai-review-expandable.collapsed {
+    max-height: 200px;
+}
+
+.ai-review-expand-toggle {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #2271b1;
+    font-size: 0.9em;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+    .ai-review-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .ai-review-rating {
+        margin-top: 10px;
+    }
+}
